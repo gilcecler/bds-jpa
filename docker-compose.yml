@@ -22,7 +22,7 @@ services:
     image: dpage/pgadmin4
     container_name: dev-pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: gilcecler@immotus.com.br
+      PGADMIN_DEFAULT_EMAIL: exemplo@com.br
       PGADMIN_DEFAULT_PASSWORD: 1234567
     ports:
       - 5050:80
