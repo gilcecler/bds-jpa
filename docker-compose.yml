@@ -7,10 +7,12 @@ services:
     image: postgres:14-alpine
     container_name: dev-postgresql
     environment:
-      POSTGRES_DB: db_bds_jpa
+      POSTGRES_USER: postgres
+      POSTGRES_DB: uri2602
       POSTGRES_PASSWORD: 1234567
+      
     ports:
-      - 5433:5432
+      - 15433:5432
     volumes:
       - ./.data/postgresql/data:/var/lib/postgresql/data
     networks:
